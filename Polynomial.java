@@ -1,25 +1,20 @@
 class Polynomial{
 
 	double[] coefficients;
+	int[] powers;
 	Polynomial(){
 		coefficients = new double[1];
 		coefficients[0] = 0;
+		power = new int[1];
+		power[0] = 0;
 	}
-	Polynomial(double[] coefficients){
-
+	Polynomial(double[] coefficients, int[] powers){
 		this.coefficients = coefficients;
-
+		this.powers = powers;
 	}
 	Polynomial add(Polynomial poly){
-		int more = Math.max(coefficients.length, poly.coefficients.length);
-		double[] n = new double[more];
-		for(int i = 0; i < poly.coefficients.length; i ++){
-			n[i] += poly.coefficients[i];
-		}
-		for(int i = 0; i < coefficients.length; i ++) {
-			n[i] += coefficients[i];
-		}
-
+		
+		
 		return new Polynomial(n);
 	}
 
