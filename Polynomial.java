@@ -1,5 +1,10 @@
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.FileNotFoundException;
+import java.io.File;
+import java.io.IOException;
+import java.util.HashMap;
+
 class Polynomial {
 
 	double[] coefficients;
